@@ -1,0 +1,145 @@
+.scenario-map { width: min(1840px, calc(100vw - 290px)); margin-left: 50%; transform: translateX(-50%); overflow-x: auto; border: 1px solid var(--line); background: #fff; }
+.scenario-map svg { display: block; width: 100%; min-width: 1120px; height: auto; font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+.scenario-map .sc-flow { fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.scenario-map .sc-information { stroke: #168d8d; }
+.scenario-map .sc-authority { stroke: #4b579e; }
+.scenario-map .sc-object-box rect { fill: #fff; stroke: #aeb9c7; stroke-width: 1.2; rx: 6; }
+.scenario-map .sc-domain-boundary { fill: #fff; stroke: #cbd4df; stroke-width: 1.2; }
+.scenario-map .sc-zone-logic { fill: #f4fbfa; stroke: #9bc9c5; }
+.scenario-map .sc-zone-equipment { fill: #f5f8fc; stroke: #aec2d2; }
+.scenario-map .sc-zone-external { fill: #fffaf1; stroke: #d0b078; }
+.scenario-map .sc-auth { stroke: #4b579e; stroke-width: 2.2; }
+.scenario-map .sc-info { stroke: #168d8d; stroke-width: 2.2; }
+.scenario-map .sc-evidence { stroke: #b8791c; stroke-width: 2.2; }
+.scenario-map .sc-exception { stroke: #b65368; stroke-width: 2.2; stroke-dasharray: 7 5; }
+.scenario-map .sc-neutral { stroke: #7d8b9d; stroke-width: 2.2; }
+.scenario-map .sc-dashed { stroke-dasharray: 7 5; }
+.scenario-map .sc-object { fill: #fff; stroke-width: 1.5; }
+.scenario-map .sc-management { fill: #f2fbf9; stroke: #63aaa7; }
+.scenario-map .sc-execution { fill: #f4f8fc; stroke: #789ebc; }
+.scenario-map .sc-support { fill: #f7f8fa; stroke: #a4afbd; }
+.scenario-map .sc-participant { fill: #fff9ef; stroke: #d0a05a; }
+.scenario-map .sc-evidence-object { fill: #fff8ee; stroke: #c9974b; }
+.scenario-map .sc-object-head-management { fill: #dff3ef; }
+.scenario-map .sc-object-head-execution { fill: #e6f0f7; }
+.scenario-map .sc-object-head-support { fill: #eceff3; }
+.scenario-map .sc-object-head-participant { fill: #fff0d8; }
+.scenario-map .sc-object-head-evidence { fill: #ffebc9; }
+.scenario-map .sc-object-title { fill: #283c56; font-size: 12px; font-weight: 600; }
+.scenario-map .sc-object-code { fill: #64758a; font-size: 8.5px; font-weight: 600; }
+.scenario-map .sc-object-note { fill: #68798c; font-size: 8.2px; }
+.scenario-map .sc-function { fill: #fff; stroke: #cbd4df; stroke-width: 1; }
+.scenario-map .sc-function-title { fill: #354861; font-size: 9.2px; font-weight: 600; }
+.scenario-map .sc-function-detail { fill: #6a788b; font-size: 7.8px; }
+.scenario-map .sc-person { fill: #fff7f9; stroke: #c97889; stroke-width: 1.25; }
+.scenario-map .sc-person-title { fill: #7f4050; font-size: 9.5px; font-weight: 600; text-anchor: middle; }
+.scenario-map .sc-person-note { fill: #746b73; font-size: 7.7px; text-anchor: middle; }
+.scenario-map .sc-role-link { stroke: #9b7180; stroke-width: 2.2; stroke-dasharray: 5 4; }
+.scenario-map .sc-label-bg { display: none; }
+.scenario-map .sc-label-auth { fill: #f0f1fa; stroke: #c5cae3; }
+.scenario-map .sc-label-info { fill: #edf8f7; stroke: #b4dcda; }
+.scenario-map .sc-label-evidence { fill: #fff7e9; stroke: #e1bf88; }
+.scenario-map .sc-label-exception { fill: #fff0f3; stroke: #e2abb6; }
+.scenario-map .sc-flow-label { fill: #405168; stroke: #fff; stroke-width: 4px; paint-order: stroke fill; stroke-linejoin: round; font-size: 8.3px; font-weight: 600; text-anchor: middle; }
+.scenario-map .sc-legend { fill: #5f6f84; font-size: 9.5px; }
+.scenario-map .sc-zone { fill: none; stroke: #d4dce5; stroke-width: 1; stroke-dasharray: 6 5; }
+.scenario-map .sc-zone-title { fill: #293d58; font-size: 14px; font-weight: 600; }
+.scenario-map .sc-zone-note { fill: #6c7c90; font-size: 8.5px; }
+.scenario-map .sc-core { fill: #fffdf7; stroke: #c99b4f; stroke-width: 1.6; stroke-dasharray: 7 5; }
+.scenario-map .sc-core-title { fill: #805a20; font-size: 10.5px; font-weight: 600; }
+.scenario-map .sc-core-note { fill: #71695c; font-size: 8px; }
+.scenario-map .sc-local-loop { fill: none; stroke: #168d8d; stroke-width: 2; stroke-dasharray: 9 6; }
+.scenario-map .sc-local-loop-title { fill: #167877; font-size: 12px; font-weight: 600; }
+.scenario-map .sc-local-loop-note { fill: #647789; font-size: 8.5px; }
+.scenario-map .sc-safety { fill: #fffaf1; stroke: #c99036; stroke-width: 1.45; stroke-dasharray: 6 4; }
+.scenario-map .sc-safety-title { fill: #77531d; font-size: 9.5px; font-weight: 600; text-anchor: middle; }
+.scenario-map .sc-safety-note { fill: #74695a; font-size: 7.8px; text-anchor: middle; }
+.scenario-map .sc-step { fill: #fff; stroke: #aeb9c7; stroke-width: 1.2; }
+.scenario-map .sc-step-badge { fill: #4b579e; }
+.scenario-map .sc-step-number { fill: #fff; font-size: 9px; font-weight: 600; text-anchor: middle; }
+.scenario-map .sc-step-title { fill: #35475f; font-size: 9.5px; font-weight: 600; }
+.scenario-map .sc-step-note { fill: #6b798c; font-size: 7.7px; }
+.scenario-map .sc-section-title { fill: #293d58; font-size: 14px; font-weight: 600; }
+.scenario-map .sc-section-note { fill: #6c7c90; font-size: 8.5px; }
+.scenario-map .sc-field-band { fill: #f5f7fa; stroke: #c9d2de; stroke-width: 1; }
+.scenario-map .sc-field-text { fill: #405269; font-size: 8px; font-weight: 600; text-anchor: middle; }
+.scenario-map .sc-junction-auth { fill: #4b579e; stroke: #fff; stroke-width: 1.5; }
+.scenario-map .sc-junction-info { fill: #168d8d; stroke: #fff; stroke-width: 1.5; }
+.scenario-map .sc-junction-evidence { fill: #b8791c; stroke: #fff; stroke-width: 1.5; }
+.scenario-map .sc-junction-exception { fill: #b65368; stroke: #fff; stroke-width: 1.5; }
+.scenario-map .sc-evolution-plane { fill: #fafbfc; stroke: #cbd4df; stroke-width: 1.2; stroke-dasharray: 7 5; }
+.scenario-map .sc-evolution-plane-title { fill: #293d58; font-size: 13px; font-weight: 600; }
+.scenario-map .sc-evolution-plane-note { fill: #6c7c90; font-size: 8.3px; }
+.scenario-map .sc-version-object { fill: #f4f1fb; stroke: #8d82b4; stroke-width: 1.5; }
+.scenario-map .sc-version-head { fill: #e7e2f3; }
+.scenario-map .sc-version-title { fill: #514a78; font-size: 11px; font-weight: 600; }
+.scenario-map .sc-version-note { fill: #6d6782; font-size: 8px; }
+.scenario-map .sc-gate { fill: #fff7e8; stroke: #b6812e; stroke-width: 1.6; }
+.scenario-map .sc-gate-head { fill: #f7e8c8; }
+.scenario-map .sc-gate-title { fill: #76531e; font-size: 11px; font-weight: 600; }
+.scenario-map .sc-gate-note { fill: #74695a; font-size: 8px; }
+.scenario-map .sc-baseline { fill: #eef3fa; stroke: #668aab; stroke-width: 1.6; }
+.scenario-map .sc-baseline-head { fill: #dce8f3; }
+.scenario-map .sc-baseline-title { fill: #385976; font-size: 11px; font-weight: 600; }
+.scenario-map .sc-baseline-note { fill: #62778a; font-size: 8px; }
+.scenario-map .sc-version-loop-title { fill: #704f87; font-size: 12px; font-weight: 600; }
+.scenario-map .sc-version-loop-note { fill: #756a7d; font-size: 8.5px; }
+.scenario-map .sp05-detailed-map { background: #fff !important; color: #283c56; font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+.scenario-map .sp05-detailed-map > rect.sc-domain-boundary { fill: #fff !important; stroke: #cbd4df; }
+.scenario-map .sp05-detailed-map .sc-zone-logic { fill: #f4fbfa !important; }
+.scenario-map .sp05-detailed-map .sc-zone-equipment { fill: #f5f8fc !important; }
+.scenario-map .sp05-detailed-map .sc-zone-external { fill: #fffaf1 !important; }
+.scenario-map .sp05-detailed-map .sc-object { fill: #fff; }
+.scenario-map .sp05-detailed-map text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-synthesis: none; }
+.scenario-map .sp05-detailed-map text { stroke: none !important; }
+.scenario-map .sp05-detailed-map .sc-flow-label { stroke: #fff !important; stroke-width: 4px; paint-order: stroke fill; }
+.scenario-map .sp05-detailed-map .sc-object-code { font-size: 9px; }
+.scenario-map .sp05-detailed-map .sc-object-note { font-size: 9px; }
+.scenario-map .sp05-detailed-map .sc-function-title { font-size: 10px; }
+.scenario-map .sp05-detailed-map .sc-function-detail { font-size: 8.5px; }
+.scenario-map .sp05-detailed-map .sc-flow-label { font-size: 9px; }
+.scenario-map .sp05-detailed-map .sc-person-title { font-size: 10px; }
+.scenario-map .sp05-detailed-map .sc-person-note { font-size: 8.2px; }
+.scenario-map .sp05-detailed-map .sc-field-text { font-size: 8.5px; }
+.scenario-map .sp05-future-detailed-map { background: #fff !important; color: #283c56; font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+.scenario-map .sp05-future-detailed-map > rect.sc-domain-boundary { fill: #fff !important; stroke: #cbd4df; }
+.scenario-map .sp05-future-detailed-map .sc-zone-logic { fill: #f4fbfa !important; }
+.scenario-map .sp05-future-detailed-map .sc-zone-equipment { fill: #f5f8fc !important; }
+.scenario-map .sp05-future-detailed-map .sc-zone-external { fill: #fffaf1 !important; }
+.scenario-map .sp05-future-detailed-map .sc-object { fill: #fff; }
+.scenario-map .sp05-future-detailed-map text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-synthesis: none; stroke: none !important; }
+.scenario-map .sp05-future-detailed-map .sc-flow-label { font-size: 9px; stroke: #fff !important; stroke-width: 4px; paint-order: stroke fill; }
+.scenario-map .sp05-future-detailed-map .sc-object-code { font-size: 9px; }
+.scenario-map .sp05-future-detailed-map .sc-object-note { font-size: 9px; }
+.scenario-map .sp05-future-detailed-map .sc-function-title { font-size: 10px; }
+.scenario-map .sp05-future-detailed-map .sc-function-detail { font-size: 8.5px; }
+.scenario-map .sp05-future-detailed-map .sc-person-title { font-size: 10px; }
+.scenario-map .sp05-future-detailed-map .sc-person-note { font-size: 8.2px; }
+.scenario-map .sp05-future-detailed-map .sc-field-text { font-size: 8.5px; }
+.scenario-map .sp02-future-detailed-map { background: #fff !important; color: #283c56; font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+.scenario-map .sp02-future-detailed-map > rect.sc-domain-boundary { fill: #fff !important; stroke: #cbd4df; }
+.scenario-map .sp02-future-detailed-map .sc-zone-logic { fill: #f4fbfa !important; }
+.scenario-map .sp02-future-detailed-map .sc-zone-equipment { fill: #f5f8fc !important; }
+.scenario-map .sp02-future-detailed-map .sc-zone-external { fill: #fffaf1 !important; }
+.scenario-map .sp02-future-detailed-map .sc-object { fill: #fff; }
+.scenario-map .sp02-future-detailed-map text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-synthesis: none; stroke: none !important; }
+.scenario-map .sp02-future-detailed-map .sc-flow-label { font-size: 9px; stroke: #fff !important; stroke-width: 4px; paint-order: stroke fill; }
+.scenario-map .sp02-future-detailed-map .sc-object-code { font-size: 9px; }
+.scenario-map .sp02-future-detailed-map .sc-object-note { font-size: 9px; }
+.scenario-map .sp02-future-detailed-map .sc-function-title { font-size: 10px; }
+.scenario-map .sp02-future-detailed-map .sc-function-detail { font-size: 8.5px; }
+.scenario-map .sp02-future-detailed-map .sc-person-title { font-size: 10px; }
+.scenario-map .sp02-future-detailed-map .sc-person-note { font-size: 8.2px; }
+.scenario-map .sp02-future-detailed-map .sc-field-text { font-size: 8.5px; }
+.scenario-map-caption { margin: 12px 2px 0; color: var(--muted); font-size: 11px; line-height: 1.75; }
+.scene-reading-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; }
+.scene-reading-item { border-top: 3px solid var(--line); padding: 12px 4px 4px; }
+.scene-reading-item strong { display: block; margin-bottom: 6px; color: var(--ink); }
+.scene-reading-item p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.scene-reading-item.is-auth { border-color: #4b579e; }
+.scene-reading-item.is-info { border-color: #168d8d; }
+.scene-reading-item.is-evidence { border-color: #b8791c; }
+.scene-reading-item.is-exception { border-color: #b65368; }
+@media (max-width: 900px) { .scene-reading-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 780px) { .scenario-map { width: 100%; margin-left: 0; transform: none; } .scenario-map svg { min-width: 1080px; } }
+@media (max-width: 560px) { .scene-reading-grid { grid-template-columns: 1fr; } }

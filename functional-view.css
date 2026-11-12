@@ -1,0 +1,32 @@
+.functional-map { width: 100%; overflow: auto; border: 1px solid #c6d1d7; background: white; }
+.functional-map { max-height: 76vh; overscroll-behavior: contain; }
+.functional-map svg { display: block; width: 3240px; max-width: none; height: auto; }
+#overview-viewport svg { width: 1840px; }
+.functional-map a:hover text { fill: #145b89; text-decoration: underline; }
+.functional-map .has-active-relation [data-relation] { opacity: .18; }
+.functional-map .has-active-relation .active-relation { opacity: 1; }
+.functional-map .active-relation path:not(.relation-hit) { stroke-width: 4px; }
+.functional-map [data-hosting].active-relation rect { stroke: #28685b; stroke-width: 3px; }
+.functional-map .relation-hit { fill: none; stroke: transparent; stroke-width: 18px; pointer-events: stroke; }
+.functional-map a:focus-visible { outline: 2px solid #32627d; }
+.diagram-tools { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 12px 0; }
+.diagram-tools[hidden] { display: none; }
+.diagram-tools button { width: 42px; height: 40px; padding: 0; border: 1px solid #9eafb9; border-radius: 4px; background: white; color: #263e4d; font-size: 21px; cursor: pointer; }
+.diagram-tools button[data-action="reset"] { font-size: 15px; }
+.diagram-tools button:hover { background: #edf3f6; }
+.diagram-tools button:disabled { opacity: .45; cursor: default; }
+.diagram-tools output { width: 64px; text-align: center; font-variant-numeric: tabular-nums; color: #37434c; }
+.architecture-reading #functions h3 { font-size: 20px; margin: 30px 0 16px; }
+.architecture-reading [id^="L-AU"], .architecture-reading [id^="ATS-"] { scroll-margin-top: 100px; }
+.architecture-reading .data-table td a { color: #285d80; }
+.architecture-reading .data-table td:first-child span { white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Diagram controls: whole-diagram fit, width fit and fullscreen. */
+.diagram-viewer { min-width: 0; }
+.diagram-viewer .diagram-tools { flex-wrap: wrap; }
+.diagram-viewer .diagram-tools button[data-action="fit"],
+.diagram-viewer .diagram-tools button[data-action="width"],
+.diagram-viewer .diagram-tools button[data-action="fullscreen"] { width: auto; min-width: 56px; padding: 0 10px; font-size: 15px; }
+.diagram-viewer:fullscreen { background: #fff; padding: 12px; box-sizing: border-box; display: flex; flex-direction: column; }
+.diagram-viewer:fullscreen .functional-map { flex: 1; min-height: 0; max-height: calc(100dvh - 110px); }

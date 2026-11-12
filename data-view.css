@@ -1,0 +1,158 @@
+.data-map {
+  width: min(1600px, calc(100vw - 290px));
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.data-map svg {
+  display: block;
+  width: 100%;
+  min-width: 1080px;
+  height: auto;
+  font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+}
+.data-map .gov-band { fill: #f3f5fa; stroke: #aeb8d3; stroke-width: 1.5; }
+.data-map .gov-item { fill: #fff; stroke: #c9d1df; stroke-width: 1; }
+.data-map .gov-title { fill: #273b58; font-size: 17px; font-weight: 600; }
+.data-map .gov-item-title { fill: #40506a; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.data-map .actor-panel { fill: #f8fafc; stroke: #c7d0dc; stroke-width: 1.4; }
+.data-map .actor-head { fill: #eaf0f5; }
+.data-map .actor-governance { fill: #f7f7fc; stroke: #aeb7d8; }
+.data-map .actor-governance-head { fill: #eceefa; }
+.data-map .actor-organizer { fill: #f3fbfa; stroke: #75b9b6; stroke-width: 1.7; }
+.data-map .actor-organizer-head { fill: #e5f5f3; }
+.data-map .actor-service { fill: #f6fafc; stroke: #aac7d8; }
+.data-map .actor-service-head { fill: #eaf4f9; }
+.data-map .actor-external { fill: #fafbfc; stroke: #b9c3cf; stroke-dasharray: 6 4; }
+.data-map .actor-external-head { fill: #eff2f5; }
+.data-map .actor-right { fill: #fffaf1; stroke: #d7b47e; }
+.data-map .actor-right-head { fill: #fff0d8; }
+.data-map .actor-title { fill: #293b55; font-size: 14px; font-weight: 600; }
+.data-map .actor-code { fill: #69788d; font-size: 9px; font-weight: 600; }
+.data-map .actor-detail { fill: #637287; font-size: 10px; }
+.data-map .core-panel { fill: #f3fbfa; stroke: #67b5b1; stroke-width: 2; }
+.data-map .core-head { fill: #e2f4f2; }
+.data-map .core-title { fill: #176f70; font-size: 18px; font-weight: 600; }
+.data-map .core-note { fill: #5f7780; font-size: 11px; }
+.data-map .key-bar { fill: #eef1fb; stroke: #b7c0df; stroke-width: 1.3; }
+.data-map .key-title { fill: #354587; font-size: 13px; font-weight: 600; }
+.data-map .key-item { fill: #4e5f79; font-size: 10px; text-anchor: middle; }
+.data-map .object-box { fill: #fff; stroke: #83c3c0; stroke-width: 1.3; }
+.data-map .object-title { fill: #263b56; font-size: 14px; font-weight: 600; }
+.data-map .object-code { fill: #168383; font-size: 9px; font-weight: 600; }
+.data-map .object-detail { fill: #64758a; font-size: 10.5px; }
+.data-map .extension-band { fill: #fbfcfe; stroke: #bfc8d7; stroke-width: 1.2; }
+.data-map .extension-title { fill: #34465f; font-size: 12px; font-weight: 600; }
+.data-map .extension-box { fill: #fff; stroke: #cbd3df; stroke-width: 1; }
+.data-map .extension-name { fill: #34465f; font-size: 11px; font-weight: 600; text-anchor: middle; }
+.data-map .extension-detail { fill: #68778c; font-size: 9px; text-anchor: middle; }
+.data-map .exchange { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.3; }
+.data-map .exchange-mission { stroke: #4b579e; }
+.data-map .exchange-state { stroke: #168d8d; }
+.data-map .exchange-governance { stroke: #9b6a20; stroke-dasharray: 7 5; }
+.data-map .exchange-evidence { stroke: #b65368; }
+.data-map .exchange-neutral { stroke: #8996a8; stroke-width: 1.5; }
+.data-map .exchange-bidirectional { stroke-width: 2.2; }
+.data-map .exchange-label-bg { fill: #fff; stroke: #d5dce5; stroke-width: 1; }
+.data-map .label-mission { fill: #f0f2fb; stroke: #c4cae5; }
+.data-map .label-state { fill: #edf8f7; stroke: #b4dcd9; }
+.data-map .label-governance { fill: #fff7e9; stroke: #e1c18d; }
+.data-map .label-evidence { fill: #fff0f3; stroke: #e2abb6; }
+.data-map .exchange-label { fill: #35475f; font-size: 10.5px; font-weight: 600; text-anchor: middle; }
+.data-map .junction-mission { fill: #4b579e; stroke: #fff; stroke-width: 2; }
+.data-map .junction-state { fill: #168d8d; stroke: #fff; stroke-width: 2; }
+.data-map .domain-flow { fill: none; stroke: #66758a; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .object-flow { fill: none; stroke: #7c899b; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .object-flow-governance { fill: none; stroke: #9b6a20; stroke-width: 1.5; stroke-dasharray: 6 4; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .domain-label { fill: #5b6b80; font-size: 9.5px; font-weight: 600; text-anchor: middle; }
+.data-map .chain-band { fill: #f4fbfa; stroke: #76bdb9; stroke-width: 1.4; }
+.data-map .evidence-band { fill: #fff5f7; stroke: #d68898; stroke-width: 1.5; }
+.data-map .chain-title { fill: #246f70; font-size: 13px; font-weight: 600; }
+.data-map .evidence-title { fill: #9d4054; font-size: 13px; font-weight: 600; }
+.data-map .chain-node { fill: #fff; stroke: #9bcfcd; stroke-width: 1; }
+.data-map .evidence-node { fill: #fff; stroke: #dba1ad; stroke-width: 1; }
+.data-map .chain-node-title { fill: #33465e; font-size: 10.5px; font-weight: 600; text-anchor: middle; }
+.data-map .chain-node-detail { fill: #6a788b; font-size: 8.5px; text-anchor: middle; }
+.data-map .diagram-note { fill: #68778c; font-size: 10px; }
+.data-map .diagram-note-strong { fill: #36485f; font-size: 10.5px; font-weight: 600; }
+.data-map .legend-text { fill: #59697e; font-size: 10.5px; }
+.data-map .loop-arrow { fill: #607086; font-size: 17px; font-weight: 600; text-anchor: middle; }
+.data-map-caption { margin: 12px 2px 0; color: var(--muted); font-size: 11px; line-height: 1.75; }
+.legacy-data-map { display: none; }
+.legacy-data-loop-map { display: none; }
+.data-map .dv-runtime-plane { fill: #f7fbfb; stroke: #b8d9d6; stroke-width: 1.4; }
+.data-map .dv-actor { fill: #fff; stroke: #bdc8d5; stroke-width: 1.35; }
+.data-map .dv-actor-governance { fill: #f7f7fc; stroke: #aeb7d8; }
+.data-map .dv-actor-organizer { fill: #f2faf9; stroke: #78b9b6; }
+.data-map .dv-actor-service { fill: #f6fafc; stroke: #aac7d8; }
+.data-map .dv-actor-executor { fill: #fffaf1; stroke: #d7b47e; }
+.data-map .dv-actor-external { fill: #fafbfc; stroke: #b9c3cf; stroke-dasharray: 6 4; }
+.data-map .dv-actor-title { fill: #273a55; font-size: 14px; font-weight: 600; }
+.data-map .dv-actor-detail { fill: #65758a; font-size: 10px; }
+.data-map .dv-runtime-node { fill: #fff; stroke: #63aaa7; stroke-width: 1.7; }
+.data-map .dv-runtime-node-contract { fill: #f6f6fc; stroke: #7f88bd; }
+.data-map .dv-runtime-node-evidence { fill: #fff8fa; stroke: #cc7f90; }
+.data-map .dv-node-step { fill: #168d8d; }
+.data-map .dv-node-step-text { fill: #fff; font-size: 10px; font-weight: 600; text-anchor: middle; dominant-baseline: middle; }
+.data-map .dv-node-title { fill: #273b56; font-size: 14px; font-weight: 600; }
+.data-map .dv-node-detail { fill: #64758a; font-size: 10px; }
+.data-map .dv-data-tag { fill: #eef8f7; stroke: #b8dcda; stroke-width: 1; }
+.data-map .dv-data-tag-contract { fill: #f0f1fa; stroke: #c7cbe3; }
+.data-map .dv-data-tag-evidence { fill: #fff0f3; stroke: #e3afb9; }
+.data-map .dv-data-tag-text { fill: #40536a; font-size: 9.5px; font-weight: 600; text-anchor: middle; }
+.data-map .dv-small-loop { fill: none; stroke: #168d8d; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv-small-input { fill: none; stroke: #4b579e; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv-big-loop { fill: none; stroke: #b65368; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv-actor-link { fill: none; stroke: #7e8b9d; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv-governance-link { fill: none; stroke: #9b6a20; stroke-width: 1.8; stroke-dasharray: 7 5; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv-loop-label-small { fill: #157877; font-size: 12px; font-weight: 600; }
+.data-map .dv-loop-label-big { fill: #a04357; font-size: 12px; font-weight: 600; }
+.data-map .dv-loop-time { fill: #68778c; font-size: 10px; }
+.data-map .dv-evolution-node { fill: #fff8fa; stroke: #d18a99; stroke-width: 1.4; }
+.data-map .dv-evolution-title { fill: #8f3e51; font-size: 13px; font-weight: 600; }
+.data-map .dv-evolution-detail { fill: #6e6872; font-size: 9.5px; }
+.data-map .dv-key-rail { fill: #f4f6fa; stroke: #b9c3d4; stroke-width: 1.2; }
+.data-map .dv-key-title { fill: #354587; font-size: 11px; font-weight: 600; }
+.data-map .dv-key-detail { fill: #5f6f84; font-size: 10px; }
+.data-map .dv-domain-rail { fill: #fbfcfe; stroke: #c5ced9; stroke-width: 1; }
+.data-map .dv-domain-title { fill: #42536a; font-size: 10.5px; font-weight: 600; }
+.data-map .dv-domain-item { fill: #65758a; font-size: 9.5px; text-anchor: middle; }
+.data-map .dv-closure-note { fill: #8f3e51; font-size: 10px; font-weight: 600; }
+.data-map .dv3-prod-plane { fill: #f7fbfb; stroke: #9fcfcb; stroke-width: 1.5; }
+.data-map .dv3-space-plane { fill: #f5f7fb; stroke: #aeb9cf; stroke-width: 1.6; }
+.data-map .dv3-rd-plane { fill: #fff8f3; stroke: #d7ae83; stroke-width: 1.4; }
+.data-map .dv3-test-plane { fill: #f7f6fc; stroke: #aaaed0; stroke-width: 1.4; }
+.data-map .dv3-release-plane { fill: #fff7f9; stroke: #d28a99; stroke-width: 1.4; }
+.data-map .dv3-plane-title { fill: #273b56; font-size: 16px; font-weight: 600; }
+.data-map .dv3-plane-note { fill: #68778c; font-size: 10px; }
+.data-map .dv3-asset { fill: #fff; stroke: #b7c2d3; stroke-width: 1.2; }
+.data-map .dv3-asset-evidence { fill: #fff7f9; stroke: #d89aa8; }
+.data-map .dv3-asset-capability { fill: #f4f4fb; stroke: #aeb3d6; }
+.data-map .dv3-asset-title { fill: #30445e; font-size: 11px; font-weight: 600; text-anchor: middle; }
+.data-map .dv3-asset-detail { fill: #68778c; font-size: 8.8px; text-anchor: middle; }
+.data-map .dv3-process { fill: #fff; stroke: #c6ced9; stroke-width: 1.2; }
+.data-map .dv3-process-rd { fill: #fffaf5; stroke: #d7b287; }
+.data-map .dv3-process-test { fill: #faf9fe; stroke: #b7b9d5; }
+.data-map .dv3-process-release { fill: #fff8fa; stroke: #d4919f; }
+.data-map .dv3-process-title { fill: #33465f; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.data-map .dv3-process-detail { fill: #6a788b; font-size: 9px; text-anchor: middle; }
+.data-map .dv3-gate { fill: #fff; stroke-width: 1.5; }
+.data-map .dv3-gate-evidence { stroke: #d18c9b; }
+.data-map .dv3-gate-release { stroke: #7c86bd; }
+.data-map .dv3-gate-title { fill: #3a4b63; font-size: 11px; font-weight: 600; text-anchor: middle; }
+.data-map .dv3-gate-detail { fill: #6b798c; font-size: 8.8px; text-anchor: middle; }
+.data-map .dv3-small-loop { fill: none; stroke: #168d8d; stroke-width: 3.8; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv3-evolution-loop { fill: none; stroke: #b65368; stroke-width: 4.2; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv3-capability-flow { fill: none; stroke: #4b579e; stroke-width: 3.1; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv3-data-link { fill: none; stroke: #7e8b9d; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv3-data-link-dashed { fill: none; stroke: #9b6a20; stroke-width: 1.4; stroke-dasharray: 6 4; stroke-linecap: round; stroke-linejoin: round; }
+.data-map .dv3-loop-label { fill: #a04357; font-size: 13px; font-weight: 600; }
+.data-map .dv3-loop-note { fill: #68778c; font-size: 9.8px; }
+.data-map .dv3-domain-base { fill: #fbfcfe; stroke: #c4ccd8; stroke-width: 1; }
+.data-map .dv3-domain-text { fill: #596a80; font-size: 10px; text-anchor: middle; }
+@media (max-width: 780px) {
+  .data-map { width: 100%; margin-left: 0; transform: none; }
+  .data-map svg { min-width: 1000px; }
+}

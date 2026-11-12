@@ -1,0 +1,143 @@
+.equipment-map { width: min(1700px, calc(100vw - 290px)); margin-left: 50%; transform: translateX(-50%); overflow-x: auto; border: 1px solid var(--line); background: #fff; }
+.equipment-map svg { display: block; width: 100%; min-width: 1100px; height: auto; font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+.equipment-map .eq-constraint-band { fill: #f4f6fa; stroke: #b8c2d2; stroke-width: 1.3; }
+.equipment-map .eq-constraint-title { fill: #30445e; font-size: 14px; font-weight: 600; }
+.equipment-map .eq-constraint-item { fill: #5f6f84; font-size: 10px; text-anchor: middle; }
+.equipment-map .eq-logic-plane { fill: #f6f7fc; stroke: #aeb7d8; stroke-width: 1.5; }
+.equipment-map .eq-mapping-plane { fill: #f2faf9; stroke: #72b8b4; stroke-width: 1.7; }
+.equipment-map .eq-physical-plane { fill: #fffaf3; stroke: #d7af74; stroke-width: 1.6; }
+.equipment-map .eq-lifecycle-plane { fill: #fff7f9; stroke: #d28b99; stroke-width: 1.4; }
+.equipment-map .eq-plane-title { fill: #273b56; font-size: 16px; font-weight: 600; }
+.equipment-map .eq-plane-note { fill: #68778c; font-size: 10px; }
+.equipment-map .eq-logic-node { fill: #fff; stroke: #aeb7d8; stroke-width: 1.2; }
+.equipment-map .eq-logic-title { fill: #324568; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.equipment-map .eq-logic-detail { fill: #68778c; font-size: 9px; text-anchor: middle; }
+.equipment-map .eq-map-object { fill: #fff; stroke: #8dc6c3; stroke-width: 1.1; }
+.equipment-map .eq-map-title { fill: #276f70; font-size: 11px; font-weight: 600; text-anchor: middle; }
+.equipment-map .eq-map-detail { fill: #68778c; font-size: 8.7px; text-anchor: middle; }
+.equipment-map .eq-reference-band { fill: #e9f7f5; stroke: #72b8b4; stroke-width: 1.2; }
+.equipment-map .eq-reference-title { fill: #176f70; font-size: 13px; font-weight: 600; }
+.equipment-map .eq-reference-detail { fill: #577282; font-size: 9.5px; }
+.equipment-map .eq-unit { fill: #fff; stroke: #d0a766; stroke-width: 1.5; }
+.equipment-map .eq-unit-center { stroke: #7f88bd; }
+.equipment-map .eq-unit-edge { stroke: #63aaa7; }
+.equipment-map .eq-unit-fixed { stroke: #d29a45; }
+.equipment-map .eq-unit-carrier { stroke: #cb7484; }
+.equipment-map .eq-unit-mobile { stroke: #9ba5b4; }
+.equipment-map .eq-unit-head { fill: #fff3df; }
+.equipment-map .eq-unit-head-center { fill: #eef0fb; }
+.equipment-map .eq-unit-head-edge { fill: #e7f5f3; }
+.equipment-map .eq-unit-head-carrier { fill: #fff0f3; }
+.equipment-map .eq-unit-head-mobile { fill: #f0f2f5; }
+.equipment-map .eq-unit-title { fill: #293c56; font-size: 13px; font-weight: 600; }
+.equipment-map .eq-unit-role { fill: #68778c; font-size: 9.5px; }
+.equipment-map .eq-cap { fill: #fff; stroke: #c9d1dc; stroke-width: 1; }
+.equipment-map .eq-cap-text { fill: #405269; font-size: 10px; font-weight: 600; text-anchor: middle; dominant-baseline: middle; }
+.equipment-map .eq-local-loop { fill: #fff8eb; stroke: #dfbd85; stroke-width: 1; }
+.equipment-map .eq-local-loop-text { fill: #80591c; font-size: 8.8px; text-anchor: middle; }
+.equipment-map .eq-flow { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.equipment-map .eq-flow-command { stroke: #4b579e; stroke-width: 2.5; }
+.equipment-map .eq-flow-state { stroke: #168d8d; stroke-width: 2.4; }
+.equipment-map .eq-flow-physical { stroke: #9b6a20; stroke-width: 1.7; }
+.equipment-map .eq-flow-version { stroke: #b65368; stroke-width: 2.5; }
+.equipment-map .eq-flow-neutral { stroke: #7f8c9d; stroke-width: 1.4; }
+.equipment-map .eq-flow-dashed { stroke-dasharray: 7 5; }
+.equipment-map .eq-label-bg { fill: #fff; stroke: #d4dbe4; stroke-width: 1; }
+.equipment-map .eq-label-command { fill: #f1f2fb; stroke: #c7cce6; }
+.equipment-map .eq-label-state { fill: #edf8f7; stroke: #b5dcda; }
+.equipment-map .eq-label-version { fill: #fff0f3; stroke: #e1aab5; }
+.equipment-map .eq-flow-label { fill: #3c4e65; font-size: 10px; font-weight: 600; text-anchor: middle; }
+.equipment-map .eq-junction-command { fill: #4b579e; stroke: #fff; stroke-width: 2; }
+.equipment-map .eq-junction-state { fill: #168d8d; stroke: #fff; stroke-width: 2; }
+.equipment-map .eq-life-object { fill: #fff; stroke: #d89aa8; stroke-width: 1.1; }
+.equipment-map .eq-life-title { fill: #934156; font-size: 10.5px; font-weight: 600; text-anchor: middle; }
+.equipment-map .eq-life-detail { fill: #746b74; font-size: 8.5px; text-anchor: middle; }
+.equipment-map .eq-lifecycle-subtitle { fill: #934156; font-size: 10.5px; font-weight: 600; }
+.equipment-map .eq-evolution-node { fill: #fff; stroke: #d89aa8; stroke-width: 1.2; }
+.equipment-map .eq-evolution-title { fill: #8f3e51; font-size: 10.5px; font-weight: 600; text-anchor: middle; }
+.equipment-map .eq-evolution-detail { fill: #746b74; font-size: 8.4px; text-anchor: middle; }
+.equipment-map .eq-domain-band { fill: #fbfcfe; stroke: #c3ccd8; stroke-width: 1; }
+.equipment-map .eq-domain-title { fill: #35475f; font-size: 11px; font-weight: 600; }
+.equipment-map .eq-domain-object { fill: #fff; stroke: #c6cfdb; stroke-width: 1; }
+.equipment-map .eq-domain-name { fill: #40536a; font-size: 10px; font-weight: 600; text-anchor: middle; }
+.equipment-map .eq-domain-detail { fill: #6a788b; font-size: 8.5px; text-anchor: middle; }
+.equipment-map .eq-domain-note { fill: #66768b; font-size: 8.8px; }
+.equipment-map .junction-contract { fill: #9b6a20; stroke: #fff; stroke-width: 2; }
+.equipment-map-caption { margin: 12px 2px 0; color: var(--muted); font-size: 11px; line-height: 1.75; }
+.section-note { margin: 12px 2px 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.legacy-equipment-section { display: none; }
+
+/* Relationship-oriented equipment view */
+.equipment-map-v2 { background: #fff; }
+.equipment-map-v2 .eqv2-zone-separator { stroke: #d7dde6; stroke-width: 1; stroke-dasharray: 5 6; }
+.equipment-map-v2 .eqv2-zone-title { fill: #293d58; font-size: 16px; font-weight: 600; }
+.equipment-map-v2 .eqv2-zone-note { fill: #718095; font-size: 10px; }
+.equipment-map-v2 .eqv2-legend { fill: #5f6f84; font-size: 10px; }
+.equipment-map-v2 .eqv2-line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.equipment-map-v2 .eqv2-command { stroke: #4b579e; stroke-width: 2.4; }
+.equipment-map-v2 .eqv2-state { stroke: #168d8d; stroke-width: 2.4; }
+.equipment-map-v2 .eqv2-physical { stroke: #9b6a20; stroke-width: 1.8; }
+.equipment-map-v2 .eqv2-version { stroke: #b65368; stroke-width: 2.8; }
+.equipment-map-v2 .eqv2-neutral { stroke: #8290a2; stroke-width: 1.5; }
+.equipment-map-v2 .eqv2-domain { stroke: #9b6a20; stroke-width: 1.5; }
+.equipment-map-v2 .eqv2-dashed { stroke-dasharray: 6 5; }
+.equipment-map-v2 .eqv2-label-bg { fill: #fff; stroke: #d3dae4; stroke-width: 1; }
+.equipment-map-v2 .eqv2-label-command { fill: #f0f1fa; stroke: #c5cae3; }
+.equipment-map-v2 .eqv2-label-state { fill: #edf8f7; stroke: #b4dcda; }
+.equipment-map-v2 .eqv2-label-physical { fill: #fff8ec; stroke: #e1c18d; }
+.equipment-map-v2 .eqv2-label-version { fill: #fff0f3; stroke: #e2abb6; }
+.equipment-map-v2 .eqv2-flow-label { fill: #405168; font-size: 9px; font-weight: 600; text-anchor: middle; }
+.equipment-map-v2 .eqv2-vertical-label { fill: #405168; font-size: 9px; font-weight: 600; text-anchor: middle; }
+
+.equipment-map-v2 .eqv2-function-node { fill: #fff; stroke: #9fa9cb; stroke-width: 1.35; }
+.equipment-map-v2 .eqv2-node-code { fill: #52609e; font-size: 9px; font-weight: 600; }
+.equipment-map-v2 .eqv2-node-title { fill: #2d405b; font-size: 12px; font-weight: 600; }
+.equipment-map-v2 .eqv2-node-detail { fill: #67778b; font-size: 9.5px; }
+.equipment-map-v2 .eqv2-transform-node { fill: #f6f7fc; stroke: #7f89bd; stroke-width: 1.6; }
+.equipment-map-v2 .eqv2-transform-match { fill: #f0faf8; stroke: #58a8a5; }
+.equipment-map-v2 .eqv2-transform-contract { fill: #fff8ed; stroke: #d1a15b; }
+.equipment-map-v2 .eqv2-transform-title { fill: #2d405b; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.equipment-map-v2 .eqv2-transform-detail { fill: #67778b; font-size: 8.8px; text-anchor: middle; }
+.equipment-map-v2 .eqv2-catalog-node { fill: #f4fbfa; stroke: #66afac; stroke-width: 1.4; }
+.equipment-map-v2 .eqv2-catalog-title { fill: #246e70; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.equipment-map-v2 .eqv2-catalog-detail { fill: #607586; font-size: 8.7px; text-anchor: middle; }
+.equipment-map-v2 .eqv2-constraint-title { fill: #805a21; font-size: 9.5px; font-weight: 600; text-anchor: middle; }
+.equipment-map-v2 .eqv2-constraint-token { fill: #fffaf1; stroke: #dab77f; stroke-width: 1; }
+.equipment-map-v2 .eqv2-token-text { fill: #77551f; font-size: 9px; font-weight: 600; text-anchor: middle; }
+
+.equipment-map-v2 .eqv2-equipment { fill: #fff; stroke-width: 1.55; }
+.equipment-map-v2 .eqv2-center { stroke: #7d87bd; }
+.equipment-map-v2 .eqv2-edge { stroke: #55a7a4; }
+.equipment-map-v2 .eqv2-fixed { stroke: #cf9740; }
+.equipment-map-v2 .eqv2-carrier { stroke: #c97082; }
+.equipment-map-v2 .eqv2-mobile { stroke: #919dab; }
+.equipment-map-v2 .eqv2-equipment-code { fill: #6b7a8e; font-size: 8.5px; font-weight: 600; }
+.equipment-map-v2 .eqv2-equipment-title { fill: #2d405a; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.equipment-map-v2 .eqv2-equipment-detail { fill: #657589; font-size: 9px; }
+.equipment-map-v2 .eqv2-capability-band { fill: #f4f7fa; stroke: #c7d0dc; stroke-width: 1; }
+.equipment-map-v2 .eqv2-capability-text { fill: #3f5269; font-size: 10px; font-weight: 600; text-anchor: middle; }
+.equipment-map-v2 .eqv2-small-loop-trace { fill: none; stroke: #168d8d; stroke-width: 2; stroke-dasharray: 9 6; stroke-linecap: round; stroke-linejoin: round; }
+.equipment-map-v2 .eqv2-small-loop-title { fill: #167877; font-size: 13px; font-weight: 600; }
+.equipment-map-v2 .eqv2-small-loop-note { fill: #647789; font-size: 9px; }
+
+.equipment-map-v2 .eqv2-domain-title { fill: #7a561f; font-size: 12px; font-weight: 600; }
+.equipment-map-v2 .eqv2-domain-note { fill: #6c7889; font-size: 9.5px; }
+.equipment-map-v2 .eqv2-domain-profile { fill: #fffdf8; stroke: #d7ba8a; stroke-width: 1.15; }
+.equipment-map-v2 .eqv2-domain-code { fill: #9b6a20; font-size: 8px; font-weight: 600; }
+.equipment-map-v2 .eqv2-domain-name { fill: #374a62; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.equipment-map-v2 .eqv2-domain-detail { fill: #657589; font-size: 8.8px; }
+.equipment-map-v2 .eqv2-domain-rule-title { fill: #3f5269; font-size: 10px; font-weight: 600; }
+.equipment-map-v2 .eqv2-domain-rule { fill: #68778b; font-size: 8.5px; }
+
+.equipment-map-v2 .eqv2-big-loop-title { fill: #9d4054; font-size: 13px; font-weight: 600; }
+.equipment-map-v2 .eqv2-big-loop-note { fill: #716873; font-size: 9px; }
+.equipment-map-v2 .eqv2-evolution-node { fill: #fff8fa; stroke: #d18a99; stroke-width: 1.3; }
+.equipment-map-v2 .eqv2-release-node { fill: #f7f6fc; stroke: #8f96c3; }
+.equipment-map-v2 .eqv2-step-badge { fill: #b65368; }
+.equipment-map-v2 .eqv2-step-text { fill: #fff; font-size: 9px; font-weight: 600; text-anchor: middle; }
+.equipment-map-v2 .eqv2-evolution-title { fill: #8f3e51; font-size: 11px; font-weight: 600; }
+.equipment-map-v2 .eqv2-evolution-detail { fill: #706a73; font-size: 8.5px; }
+.equipment-map-v2 .eqv2-gate-node { fill: #fff; stroke: #b65368; stroke-width: 1.7; }
+.equipment-map-v2 .eqv2-gate-title { fill: #8f3e51; font-size: 11px; font-weight: 600; text-anchor: middle; }
+.equipment-map-v2 .eqv2-gate-detail { fill: #706a73; font-size: 8.2px; text-anchor: middle; }
+@media (max-width: 780px) { .equipment-map { width: 100%; margin-left: 0; transform: none; } .equipment-map svg { min-width: 1050px; } }

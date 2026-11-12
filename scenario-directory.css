@@ -1,0 +1,27 @@
+.scenario-directory .skill-download { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px 28px; border-top:2px solid #4b7f76; padding:22px 0; }
+.scenario-directory .skill-download h2 { margin-bottom:6px; }
+.scenario-directory .skill-download p { margin:6px 0; }
+.scenario-directory .download-meta { font-size:14px; color:#5c666e; }
+.scenario-directory .download-link { align-self:center; display:flex; align-items:center; gap:12px; padding:12px 18px; background:#e4eee9; color:#215a4f; font-weight:700; border:1px solid #aac2b9; border-radius:4px; text-decoration:none; }
+.scenario-directory .download-link:hover { background:#d5e7dd; }
+.scenario-directory .download-link span { font-size:24px; }
+.scenario-directory .download-condition { grid-column:1/-1; font-size:15px; color:#52616a; }
+.catalog-heading,.catalog-entry { display:grid; grid-template-columns:230px minmax(0,1fr) 205px; gap:24px; }
+.catalog-heading { color:#617078; font-size:14px; border-bottom:1px solid #bfcbd0; padding:12px 0; }
+.catalog-entry { border-bottom:1px solid #d7dfe1; padding:24px 0; }
+.catalog-entry h3 { margin:6px 0 10px; }
+.catalog-code,.catalog-kind { font-size:14px; color:#5c6970; }
+.catalog-entry p { margin:4px 0 10px; }
+.catalog-focus { font-size:15px; color:#52616a; }
+.catalog-status { color:#766135; font-size:15px; }
+.catalog-status.current { color:#216b5d; }
+.catalog-entry > div:last-child p { font-size:15px; }
+.package-digest { overflow-wrap:anywhere; }
+.scenario-directory pre { max-width:100%; overflow-x:auto; padding:12px; background:#f2f5f6; }
+.scenario-directory .table-wrap { max-width:100%; overflow-x:auto; }
+.scenario-directory .table-wrap table { width:100%; border-collapse:collapse; }
+.scenario-directory .table-wrap th,.scenario-directory .table-wrap td { padding:12px 14px; text-align:left; vertical-align:top; border-bottom:1px solid #d7dfe1; overflow-wrap:anywhere; }
+.scenario-directory .table-wrap th { background:#edf2f3; }
+.scenario-directory .table-wrap th:first-child,.scenario-directory .table-wrap td:first-child { width:160px; }
+@media(max-width:1200px) { .catalog-heading,.catalog-entry { grid-template-columns:190px minmax(0,1fr); }.catalog-heading{display:none}.catalog-entry>div:last-child{grid-column:2;} }
+@media(max-width:700px) { .scenario-directory .skill-download,.catalog-entry { grid-template-columns:minmax(0,1fr); }.catalog-entry>div:last-child{grid-column:auto}.scenario-directory .download-link{justify-self:start}.catalog-entry{gap:12px} }

@@ -1,0 +1,32 @@
+/* Shared navigation and reading hierarchy for all five architecture views. */
+body[data-five-view] [data-view-navigation] {
+ position:sticky; top:var(--view-topbar,56px); z-index:30; display:flex; flex-wrap:nowrap;
+ gap:6px; margin:12px 0; padding:8px 0; overflow-x:auto; background:#fff;
+ border-bottom:1px solid #cad9df;
+}
+body[data-five-view] [data-view-navigation] a {
+ flex:0 0 auto; padding:7px 13px; border:1px solid transparent; border-radius:5px;
+ background:transparent; color:#345461; font-size:14px; font-weight:600; text-decoration:none;
+}
+body[data-five-view] [data-view-navigation] a[aria-current="location"] {background:#245b70;color:white;}
+body[data-five-view] :is([data-view-reader],#architecture-reading,[id$="-full-architecture"],#view-records,#view-configuration) {scroll-margin-top:var(--view-reading-offset,130px);}
+body[data-five-view] :is(button,a,select,summary):focus-visible {outline:3px solid #267c97;outline-offset:3px;}
+body[data-five-view] .five-view-nav {gap:6px;flex-wrap:wrap;}
+body[data-five-view] :is(.data-reader-columns,.equipment-reader-columns,.itot-reader-columns,.organization-reader-columns) {grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);}
+body[data-five-view] :is(.data-case-card,.equipment-case-card,.itot-case-card,.organization-case-card) {border-left:3px solid #337e92;background:#fff;padding:8px 12px;margin-bottom:10px;}
+body[data-five-view] :is(.data-case-card,.equipment-case-card,.itot-case-card,.organization-case-card):first-of-type {border-left-color:#a88a4d;background:#f6f2e8;}
+body[data-five-view] :is(.data-case-card,.equipment-case-card,.itot-case-card,.organization-case-card):last-of-type {border-left-color:#43816e;background:#edf5f0;}
+body[data-five-view] :is(.data-case-card,.equipment-case-card,.itot-case-card,.organization-case-card) h4 {font-size:14px;font-weight:700;margin:2px 0 6px;}
+body[data-five-view] :is(.data-case-card,.equipment-case-card,.itot-case-card,.organization-case-card) p {font-size:14px;line-height:1.65;}
+body[data-five-view] :is(.data-reader-footer,.equipment-reader-footer,.itot-reader-footer,.organization-reader-footer) {flex-wrap:wrap;background:#f4f7f9;}
+body[data-five-view] :is(.data-stage-tabs,.equipment-stage-tabs,.itot-stage-tabs,.organization-stage-tabs,.reader-stage-tabs) {scrollbar-width:thin;}
+@media(min-width:1000px) {
+ body[data-five-view] :is(#functional-comparison,#data-reader,#equipment-reader,#itot-reader,#organization-reader) {height:min(900px,calc(100dvh - var(--view-reading-offset,130px) - 16px));min-height:400px;}
+ body[data-five-view] dialog :is(#functional-comparison,#data-reader,#equipment-reader,#itot-reader,#organization-reader) {height:100%;min-height:0;}
+ body[data-five-view] :is(#data-stage-graph,#equipment-stage-graph,#itot-stage-graph,#organization-stage-graph) {min-height:0;}
+}
+@media(max-width:850px) {
+ body[data-five-view] :is(.data-reader-columns,.equipment-reader-columns,.itot-reader-columns,.organization-reader-columns) {grid-template-columns:1fr;}
+ body[data-five-view] :is(.data-stage-tabs,.equipment-stage-tabs,.itot-stage-tabs,.organization-stage-tabs,.reader-stage-tabs) {flex-wrap:nowrap;overflow-x:auto;}
+ body[data-five-view] :is(.data-stage-tabs,.equipment-stage-tabs,.itot-stage-tabs,.organization-stage-tabs,.reader-stage-tabs) button {flex:0 0 auto;}
+}

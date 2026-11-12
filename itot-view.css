@@ -1,0 +1,91 @@
+.itot-map { width: min(1840px, calc(100vw - 290px)); margin-left: 50%; transform: translateX(-50%); overflow-x: auto; border: 1px solid var(--line); background: #fff; }
+.itot-map svg { display: block; width: 100%; min-width: 1120px; height: auto; font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+.itot-map .itot-zone-separator { stroke: #d7dde6; stroke-width: 1; stroke-dasharray: 5 6; }
+.itot-map .itot-zone-title { fill: #293d58; font-size: 16px; font-weight: 600; }
+.itot-map .itot-zone-note { fill: #718095; font-size: 10px; }
+.itot-map .itot-legend { fill: #5f6f84; font-size: 10px; }
+.itot-map .itot-line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.itot-map .itot-command { stroke: #4b579e; stroke-width: 2.5; }
+.itot-map .itot-state { stroke: #168d8d; stroke-width: 2.5; }
+.itot-map .itot-physical { stroke: #9b6a20; stroke-width: 1.9; }
+.itot-map .itot-version { stroke: #b65368; stroke-width: 2.8; }
+.itot-map .itot-security { stroke: #66758a; stroke-width: 1.5; stroke-dasharray: 6 5; }
+.itot-map .itot-neutral { stroke: #8290a2; stroke-width: 1.5; }
+.itot-map .itot-dashed { stroke-dasharray: 6 5; }
+.itot-map .itot-label-bg { fill: #fff; stroke: #d3dae4; stroke-width: 1; }
+.itot-map .itot-label-command { fill: #f0f1fa; stroke: #c5cae3; }
+.itot-map .itot-label-state { fill: #edf8f7; stroke: #b4dcda; }
+.itot-map .itot-label-physical { fill: #fff8ec; stroke: #e1c18d; }
+.itot-map .itot-label-version { fill: #fff0f3; stroke: #e2abb6; }
+.itot-map .itot-flow-label { fill: #405168; font-size: 9px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-it-node { fill: #fff; stroke: #9fa9cb; stroke-width: 1.35; }
+.itot-map .itot-transaction-node { fill: #f5f6fc; stroke: #6976b1; stroke-width: 1.6; }
+.itot-map .itot-state-node { fill: #f4fbfa; stroke: #72b7b4; }
+.itot-map .itot-node-code { fill: #63738a; font-size: 8.5px; font-weight: 600; }
+.itot-map .itot-node-title { fill: #2e415b; font-size: 11px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-node-detail { fill: #66768a; font-size: 8.7px; }
+.itot-map .itot-baseline-node { fill: #fff5f8; stroke: #b65368; stroke-width: 1.7; }
+.itot-map .itot-baseline-code { fill: #9d4054; font-size: 8.5px; font-weight: 600; }
+.itot-map .itot-baseline-title { fill: #394765; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-baseline-detail { fill: #685f6c; font-size: 8.7px; }
+.itot-map .itot-baseline-band { fill: #f2f1fa; stroke: #c4c8df; stroke-width: 1; }
+.itot-map .itot-baseline-band-text { fill: #4a506d; font-size: 8.5px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-conduit { fill: #fbfcfe; stroke-width: 1.35; stroke-dasharray: 6 4; }
+.itot-map .itot-control-conduit { stroke: #8993c2; }
+.itot-map .itot-state-conduit { stroke: #72b7b4; }
+.itot-map .itot-release-conduit { stroke: #d08a99; }
+.itot-map .itot-conduit-code { fill: #6d7b8f; font-size: 8px; font-weight: 600; }
+.itot-map .itot-conduit-title { fill: #2f425b; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-conduit-note { fill: #67778b; font-size: 8.5px; }
+.itot-map .itot-gate { fill: #fff; stroke-width: 1.4; }
+.itot-map .itot-gate-command { stroke: #6976b1; }
+.itot-map .itot-gate-state { stroke: #4c9d9a; }
+.itot-map .itot-gate-version { stroke: #c36d7f; }
+.itot-map .itot-gate-title { fill: #3d4f67; font-size: 8px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-contract-band { fill: #f0f1fa; stroke: #c5cae3; stroke-width: 1; }
+.itot-map .itot-contract-text { fill: #43526d; font-size: 8.5px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-comm-note { fill: #596a80; font-size: 8.2px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-release-band { fill: #fff0f3; stroke: #e2abb6; stroke-width: 1; }
+.itot-map .itot-release-text { fill: #8f4255; font-size: 8.5px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-security-rail { fill: #f1f3f6; stroke: #9ca7b6; stroke-width: 1.1; }
+.itot-map .itot-security-text { fill: #526277; font-size: 9px; font-weight: 600; text-anchor: middle; }
+
+.itot-map .itot-ot-node { fill: #fff; stroke-width: 1.5; }
+.itot-map .itot-edge-node { stroke: #59aaa7; }
+.itot-map .itot-mobile-node { stroke: #909ba9; }
+.itot-map .itot-fixed-node { stroke: #cf9740; }
+.itot-map .itot-carrier-node { stroke: #c97082; }
+.itot-map .itot-ot-title { fill: #2e415b; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-ot-detail { fill: #657589; font-size: 8.8px; }
+.itot-map .itot-local-contract { fill: #f4f7fa; stroke: #c7d0dc; stroke-width: 1; }
+.itot-map .itot-local-contract-text { fill: #42546a; font-size: 8.2px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-safety-node { fill: #fffaf1; stroke: #c99036; stroke-width: 1.7; }
+.itot-map .itot-safety-title { fill: #744f18; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-safety-detail { fill: #6b665e; font-size: 8.8px; }
+.itot-map .itot-takeover-node { fill: #fff7f9; stroke: #c87082; stroke-width: 1.4; }
+.itot-map .itot-takeover-title { fill: #8e4052; font-size: 10.5px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-takeover-detail { fill: #716a73; font-size: 8.5px; }
+.itot-map .itot-small-loop { fill: none; stroke: #168d8d; stroke-width: 2; stroke-dasharray: 9 6; stroke-linecap: round; stroke-linejoin: round; }
+.itot-map .itot-small-loop-title { fill: #167877; font-size: 13px; font-weight: 600; }
+.itot-map .itot-small-loop-note { fill: #647789; font-size: 9px; }
+.itot-map .itot-deploy-node { fill: #fff8fa; stroke: #d18a99; stroke-width: 1.4; }
+.itot-map .itot-trial-node { fill: #f7f6fc; stroke: #8e96c2; stroke-width: 1.4; }
+.itot-map .itot-deploy-title { fill: #4a506d; font-size: 11px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-deploy-detail { fill: #6b7180; font-size: 8.5px; }
+
+.itot-map .itot-domain-rail { fill: #fbfcfe; stroke: #c4ccd8; stroke-width: 1; }
+.itot-map .itot-domain-title { fill: #3f5269; font-size: 9.5px; font-weight: 600; }
+.itot-map .itot-domain-item { fill: #65758a; font-size: 7.8px; text-anchor: middle; }
+.itot-map .itot-big-loop-title { fill: #9d4054; font-size: 13px; font-weight: 600; }
+.itot-map .itot-big-loop-note { fill: #716873; font-size: 9px; }
+.itot-map .itot-evolution-node { fill: #fff8fa; stroke: #d18a99; stroke-width: 1.3; }
+.itot-map .itot-signed-node { fill: #f7f6fc; stroke: #8e96c2; }
+.itot-map .itot-step-badge { fill: #b65368; }
+.itot-map .itot-step-text { fill: #fff; font-size: 9px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-evolution-title { fill: #8f3e51; font-size: 10.5px; font-weight: 600; }
+.itot-map .itot-evolution-detail { fill: #706a73; font-size: 8.2px; }
+.itot-map .itot-approval-node { fill: #fff; stroke: #b65368; stroke-width: 1.7; }
+.itot-map .itot-approval-title { fill: #8f3e51; font-size: 10.5px; font-weight: 600; text-anchor: middle; }
+.itot-map .itot-approval-detail { fill: #706a73; font-size: 8px; text-anchor: middle; }
+.itot-map-caption { margin: 12px 2px 0; color: var(--muted); font-size: 11px; line-height: 1.75; }
+@media (max-width: 780px) { .itot-map { width: 100%; margin-left: 0; transform: none; } .itot-map svg { min-width: 1080px; } }

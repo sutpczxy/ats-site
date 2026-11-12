@@ -1,0 +1,29 @@
+.architecture-reading .inner-page { width: min(1240px, calc(100% - 48px)); padding-top: 32px; }
+.architecture-reading .inner-hero { padding: 8px 0 24px; gap: 24px; }
+.architecture-reading .inner-hero h1 { font-size: 34px; letter-spacing: 0; }
+.architecture-reading .inner-hero p { max-width: 960px; font-size: 18px; color: #37434c; }
+.architecture-reading .content-block { padding: 30px 0; scroll-margin-top: 90px; }
+.architecture-reading .content-block h2 { font-size: 24px; letter-spacing: 0; color: #24333e; }
+.architecture-reading .content-block > p,
+.architecture-reading .content-block li { max-width: 100%; font-size: 18px; line-height: 1.8; color: #37434c; }
+.architecture-reading .content-block li + li { margin-top: 10px; }
+.architecture-reading .view-list { gap: 0; }
+.architecture-reading .view-row { grid-template-columns: 230px minmax(0, 1fr); border: 0; border-bottom: 1px solid #d8dfe3; background: transparent; padding: 18px 0; text-decoration: none; }
+.architecture-reading .view-row b { font-size: 17px; color: #24333e; }
+.architecture-reading .view-row span { font-size: 17px; color: #37434c; }
+.architecture-reading a.view-row:hover { background: #f2f5f7; }
+.architecture-reading .data-table { font-size: 16px; min-width: 720px; }
+.architecture-reading .data-table th { font-size: 16px; letter-spacing: 0; background: #eef2f4; color: #24333e; }
+.architecture-reading .data-table td { color: #37434c; }
+.architecture-reading .data-table td:first-child { white-space: normal; min-width: 160px; }
+.architecture-reading .section-nav { gap: 12px 24px; }
+.architecture-reading .section-nav a { border: 0; padding: 8px 0; font-size: 16px; color: #285d80; text-decoration: underline; text-underline-offset: 4px; }
+.architecture-reading :focus-visible { outline: 2px solid #285d80; outline-offset: 3px; }
+.architecture-reading .content-block p { overflow-wrap: anywhere; }
+.architecture-reading .object-detail-head p { font-size: 18px; line-height: 1.8; }
+.architecture-reading .callout { font-size: 16px; background: #f2f5f7; border-left-color: #718795; }
+@media (max-width: 700px) {
+  .architecture-reading .inner-page { width: calc(100% - 32px); }
+  .architecture-reading .view-row { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .architecture-reading .inner-hero h1 { font-size: 30px; }
+}

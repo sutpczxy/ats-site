@@ -1,0 +1,100 @@
+.organization-map {
+  width: min(1840px, calc(100vw - 290px));
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.organization-map svg {
+  display: block;
+  width: 100%;
+  min-width: 1120px;
+  height: auto;
+  font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+}
+.organization-map .org-flow { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.organization-map .org-down { stroke: #4b579e; stroke-width: 2.5; }
+.organization-map .org-up { stroke: #168d8d; stroke-width: 2.5; }
+.organization-map .org-peer { stroke: #b8791c; stroke-width: 2.2; }
+.organization-map .org-supervision { stroke: #718096; stroke-width: 1.6; }
+.organization-map .org-service { stroke: #607e9a; stroke-width: 1.8; stroke-dasharray: 7 5; }
+.organization-map .org-evolution { stroke: #b65368; stroke-width: 2.6; }
+.organization-map .org-dashed { stroke-dasharray: 8 6; }
+.organization-map .org-separator { stroke: #d5dce5; stroke-width: 1; stroke-dasharray: 5 6; }
+.organization-map .org-level-line { stroke: #d9e0e8; stroke-width: 1; }
+.organization-map .org-zone-title { fill: #293d58; font-size: 16px; font-weight: 600; }
+.organization-map .org-zone-note { fill: #718095; font-size: 9.5px; }
+.organization-map .org-legend { fill: #5f6f84; font-size: 9.5px; }
+.organization-map .org-level-title { fill: #263a55; font-size: 15px; font-weight: 600; }
+.organization-map .org-level-code { fill: #6b7b90; font-size: 8.5px; font-weight: 600; }
+.organization-map .org-level-note { fill: #6e7d91; font-size: 9px; }
+.organization-map .org-level-national { fill: #f7f8fd; }
+.organization-map .org-level-regional { fill: #f3fbfa; }
+.organization-map .org-level-operating { fill: #fff9ef; }
+.organization-map .org-level-execution { fill: #fff7f9; }
+.organization-map .org-level-stripe-national { fill: #5364ad; }
+.organization-map .org-level-stripe-regional { fill: #199493; }
+.organization-map .org-level-stripe-operating { fill: #d18b24; }
+.organization-map .org-level-stripe-execution { fill: #c85d72; }
+.organization-map .org-node { fill: #fff; stroke-width: 1.45; }
+.organization-map .org-node-national { stroke: #8793c8; }
+.organization-map .org-node-regional { stroke: #62aaa8; }
+.organization-map .org-node-operating { stroke: #cf9740; }
+.organization-map .org-node-execution { stroke: #c87082; }
+.organization-map .org-node-code { fill: #63738a; font-size: 8.5px; font-weight: 600; }
+.organization-map .org-node-title { fill: #2d405a; font-size: 12px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-node-detail { fill: #66768a; font-size: 8.7px; }
+.organization-map .org-node-band { fill: #f5f7fa; stroke: #ccd4df; stroke-width: 1; }
+.organization-map .org-node-band-text { fill: #405269; font-size: 8.2px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-admin-node { fill: #f8f9fb; stroke: #9ca8b7; stroke-width: 1.35; }
+.organization-map .org-admin-title { fill: #42536a; font-size: 11px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-admin-detail { fill: #6b798c; font-size: 8.5px; }
+.organization-map .org-service-node { fill: #f4f8fb; stroke: #8da8bd; stroke-width: 1.35; }
+.organization-map .org-service-title { fill: #3f566d; font-size: 11px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-service-detail { fill: #68798a; font-size: 8.5px; }
+.organization-map .org-relation-rail { fill: #f2f4f7; stroke: #a6b0bd; stroke-width: 1; }
+.organization-map .org-relation-rail-service { fill: #eef5f8; stroke: #9bb2c3; }
+.organization-map .org-rail-text { fill: #56667a; font-size: 8.5px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-interface-down { fill: #f0f1fa; stroke: #c5cae3; stroke-width: 1; }
+.organization-map .org-interface-up { fill: #edf8f7; stroke: #b4dcda; stroke-width: 1; }
+.organization-map .org-interface-peer { fill: #fff7e9; stroke: #e1bf88; stroke-width: 1; }
+.organization-map .org-interface-text { fill: #3e5068; font-size: 8.5px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-peer-node { fill: #fff9ef; stroke: #d39a44; stroke-width: 1.35; }
+.organization-map .org-peer-title { fill: #7b571f; font-size: 9.5px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-peer-detail { fill: #77664f; font-size: 7.8px; text-anchor: middle; }
+.organization-map .org-port { stroke: #fff; stroke-width: 1.5; }
+.organization-map .org-port-down { fill: #4b579e; }
+.organization-map .org-port-up { fill: #168d8d; }
+.organization-map .org-port-peer { fill: #b8791c; }
+.organization-map .org-label-bg { fill: #fff; stroke: #d5dce5; stroke-width: 1; }
+.organization-map .org-label-down { fill: #f0f1fa; stroke: #c5cae3; }
+.organization-map .org-label-up { fill: #edf8f7; stroke: #b4dcda; }
+.organization-map .org-label-peer { fill: #fff7e9; stroke: #e1bf88; }
+.organization-map .org-label-supervision { fill: #f4f5f7; stroke: #cbd2db; }
+.organization-map .org-label-service { fill: #eef5f8; stroke: #bdceda; }
+.organization-map .org-label-version { fill: #fff0f3; stroke: #e2abb6; }
+.organization-map .org-flow-label { fill: #405168; font-size: 8.5px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-small-loop { fill: none; stroke: #168d8d; stroke-width: 2; stroke-dasharray: 9 6; }
+.organization-map .org-small-loop-title { fill: #167877; font-size: 12px; font-weight: 600; }
+.organization-map .org-small-loop-note { fill: #617789; font-size: 8.5px; }
+.organization-map .org-boundary { fill: #fffaf1; stroke: #c99036; stroke-width: 1.4; stroke-dasharray: 6 4; }
+.organization-map .org-boundary-title { fill: #7b561d; font-size: 10px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-boundary-note { fill: #756b5d; font-size: 8px; text-anchor: middle; }
+.organization-map .org-evolution-title { fill: #9d4054; font-size: 13px; font-weight: 600; }
+.organization-map .org-evolution-note { fill: #716873; font-size: 8.8px; }
+.organization-map .org-evolution-node { fill: #fff8fa; stroke: #d18a99; stroke-width: 1.3; }
+.organization-map .org-evolution-approved { fill: #f5f4fb; stroke: #8e96c2; stroke-width: 1.45; }
+.organization-map .org-step-badge { fill: #b65368; }
+.organization-map .org-step-text { fill: #fff; font-size: 9px; font-weight: 600; text-anchor: middle; }
+.organization-map .org-evolution-node-title { fill: #8f3e51; font-size: 10px; font-weight: 600; }
+.organization-map .org-evolution-detail { fill: #706a73; font-size: 7.9px; }
+.organization-map .org-domain-rail { fill: #fbfcfe; stroke: #c4ccd8; stroke-width: 1; }
+.organization-map .org-domain-title { fill: #3f5269; font-size: 9.5px; font-weight: 600; }
+.organization-map .org-domain-item { fill: #65758a; font-size: 7.7px; text-anchor: middle; }
+.organization-map-caption { margin: 12px 2px 0; color: var(--muted); font-size: 11px; line-height: 1.75; }
+.page-note { margin: 12px 2px 0; color: var(--muted); font-size: 12px; line-height: 1.75; }
+@media (max-width: 780px) {
+  .organization-map { width: 100%; margin-left: 0; transform: none; }
+  .organization-map svg { min-width: 1080px; }
+}
