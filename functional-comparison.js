@@ -144,14 +144,12 @@
  function render(){
   root.querySelector('.reader-cycle').textContent=stage.moment+' · '+stage.steps.join(' → ');
   stageButtons.forEach(b=>{const on=b.dataset.readerStage===stage.key;b.setAttribute('aria-pressed',String(on));});
-  example.replaceChildren();example.append(make('span','案例侧 · '+stage.moment,'reader-panel-label'),make('h3',stage.title));
+  example.replaceChildren();example.append(make('h3',stage.title));
   example.append(make('p',stage.task,'reader-task-label'));
-  const route=make('ol',null,'reader-case-route');stage.steps.forEach(text=>route.append(make('li',text)));example.append(route);
-  [['当前情况',stage.situation],['判断和行动',stage.example],['阶段结果',stage.output.replace(/^(输出：|形成任务：|形成依据：|形成候选：|形成执行记录：|形成决定：|形成改进：)/,'')]].forEach(([title,text],i)=>{const n=make('div',null,'reader-scenario-block reader-scenario-'+i);n.append(make('h4',title),make('p',text));example.append(n);});
-  const core=make('div',null,'reader-agent-work');
-  stage.tech.slice(0,2).forEach(([name,text])=>{const p=make('p');p.append(make('strong',name+'：'),document.createTextNode(text));core.append(p);});example.append(core);
-  const role=make('details',null,'reader-role-focus');role.append(make('summary','Skill及专业服务怎样支撑'));
-  stage.tech.slice(2).forEach(([name,text])=>{const p=make('p');p.append(make('strong',name+'：'),document.createTextNode(text));role.append(p);});example.append(role);
+  [['当前情况',stage.situation],['自主处理',stage.example],['阶段结果',stage.output.replace(/^(输出：|形成任务：|形成依据：|形成候选：|形成执行记录：|形成决定：|形成改进：)/,'')]].forEach(([title,text],i)=>{const n=make('article',null,'reader-scenario-block reader-scenario-'+i);n.append(make('h4',title),make('p',text));example.append(n);});
+  const records=make('div',null,'reader-record-chips');stage.primary.forEach(id=>records.append(reference(id)));example.append(make('h4','本阶段查阅'),records);
+  const role=make('details',null,'reader-role-focus');role.append(make('summary','大模型、智能体和Skill怎样协作'));
+  stage.tech.forEach(([name,text])=>{const p=make('p');p.append(make('strong',name+'：'),document.createTextNode(text));role.append(p);});example.append(role);
   const concrete=make('details',null,'reader-case-records');concrete.append(make('summary',data.case_id==='highway'?'本阶段事件记录':'本阶段具体运输安排'));stage.case_records.forEach(([name,text])=>{const p=make('p');p.append(make('strong',name+'：'),document.createTextNode(text));concrete.append(p);});example.append(concrete);
   const feedback=make('div',null,'reader-feedback-actions');
   if(stage.key==='evaluate'){

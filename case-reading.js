@@ -11,7 +11,7 @@ window.ATSCaseReading={
   const attr={organization:'organizationStage',itot:'itotStage',functional:'readerStage',data:'dataStage',equipment:'equipmentStage'}[view];
   const selector={organization:'[data-organization-stage]',itot:'[data-itot-stage]',functional:'[data-reader-stage]',data:'[data-data-stage]',equipment:'[data-equipment-stage]'}[view];
   document.querySelectorAll(selector).forEach(n=>{const i=data.stages.findIndex(s=>s.key===n.dataset[attr]);if(i>=0)n.textContent=(data.stages[i].key==='improve'?'':String(i+1).padStart(2,'0')+' ')+data.stages[i].title;});
-  if(view==='functional')document.querySelector('.reader-workspace-bar strong').textContent='案例对照 · '+data.case_title;
+  if(view==='functional')document.querySelector('.reader-workspace-bar strong').textContent='案例功能对照';
   document.querySelectorAll('.five-view-nav a').forEach(a=>this.link(a));
   return data;
  },

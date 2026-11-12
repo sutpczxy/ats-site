@@ -1,20 +1,20 @@
 {
   "edition": "public-reading",
-  "source_commit": "35b7a500692c504b0747a86940c63b5cee6c3846",
+  "source_commit": "129a568fc7b71a0fbb28b2bf6c8aa0b089555526",
   "files": {
     "app.js": "fdbb063bbf70c79cd5d006436f2edb208fc8ec006216e8a590989081b6ad12c4",
-    "architecture-data.html": "ab06805548d45bbfa0957294f2662dd457b48b6c04d767835d7c2e3a12530f33",
-    "architecture-equipment.html": "71c6ba3c077bbee3f2d29f1aeb4129a0319b584222420abc0a5ee9b26eaa9097",
-    "architecture-functional.html": "f8251b3294fe437f17524bb578bd28d3cb38fb56f9d53eceeeade0c647654399",
+    "architecture-data.html": "b123e576399633d060b17663e868719ae011e76e14d8640cf515aef234fcabd1",
+    "architecture-equipment.html": "db4eb43119c538e7b10fca591862804129a87b41d3fc95b2161adec9b3cba692",
+    "architecture-functional.html": "fe0b5c25d2e58d227722a0f11593a0d07e3aa7df781e3ffcc589c1aa1fb641a1",
     "architecture-guide.css": "03bd43638a75d0b177020e39cd419e4471f5ba391431d0ceb6adf694a5461355",
     "architecture-guide.js": "815e07d884f442bf4a60f0fa3055a8e1775c97828de1acdbe10414614f4d60eb",
-    "architecture-itot.html": "e117680e954f9bd3da43c028b384a30b420e1f398425c423d37675b755950063",
-    "architecture-organization.html": "9d0557bf3ddd06419f6e141b60d9ebd9577535cc4b8d71cbb893f4917aca8645",
+    "architecture-itot.html": "10b6442a881687613af5dd69918e3739f6ae81e59973d7d169891c2b9401254f",
+    "architecture-organization.html": "0160bb963103b79b252f17eb4560d61ba407f96b8f14253e2f3526fe04eb7f06",
     "architecture-reading.css": "2bdc293552ffe3027c57d8bcffb298ce77d6447c05205fd4f18c7fef6dd9e8f4",
     "architecture.html": "7f8c138e1d532f699c29f617aac8bd0e50043097494bd2e2eea2732b29f16da3",
     "business-flow.css": "e9e575c32fde7d6efc7578a9fb0ef51358b0c6cfe86c000af1064d5eabb128b3",
     "case-reading.css": "f4a6dfc2708ec07c8e9e37258f07d9fec9a91d1acb39ce69638454db14cba3b9",
-    "case-reading.js": "54710ebb37569d5d48d6a1167407caf16268e3a02f0de62554cf37ba1442730e",
+    "case-reading.js": "4cf55f24620650f6737aadf3dfb11d7752bba3fd2815866c323c3d692713a3cd",
     "data-reading.css": "c455c89fd81d2db4b23fe57c85664e55704d93f4a8ad57a9121907588014af93",
     "data-reading.js": "c923b1c5e6a0c68ca2aea2cf9d5b320655ca6cf6f267f5330b643cd549ee8d66",
     "data-view.css": "1e693cd5a9ae18e78101c18556651dbf2104cbc2384d5b04b1ad28a1f2da9649",
@@ -59,7 +59,7 @@
     "features.html": "aebdec8107f8638950345f32b9e1e31192c27eafe9b3b826c437370c5b89deda",
     "five-views.css": "5e8ff7e3c339b59ac1855f22f63efdf1197499cdb7054405fc64795d39f4e1b4",
     "five-views.js": "adc15568257f80414d77b8b986ffb440d04d867b126f3a3da23240dc4780e819",
-    "functional-comparison.js": "c27f31f6575773d781446d30a952067846a7663b415f525a71e80b58a60ff549",
+    "functional-comparison.js": "de16bf7565a04f69c60d3054126693efbcc5c849f2d51ff30f7468150c5abb05",
     "functional-navigation.js": "76303af9c7bc062e7d7aa3808ff2da70ba5e30d894534cee19ff0d54e057a2aa",
     "functional-records.js": "1d35e35482975ac00a94f49d78eeba364adaea354918eadc4858c6889ef92d47",
     "functional-view.css": "1853bb809d94c32cfbd88548f62ac725f278219de98ce0853e7e24d2478f08eb",
@@ -104,6 +104,6 @@
     "sp10.html": "f43ed69be086e48c704aeaed976734cf658ddc73392083e7af2d24ece3a194b0",
     "styles.css": "88795632a25abd4030987c792e3293790a0994df37c7d25653c52a622e76142d",
     "view-navigation.js": "3ad2b26e90fe89bcc56c9dbd54e679f016c2b5fc9438f26c6a3789fde6a95e93",
-    "view-reading.css": "4cccd63f9eaf966e1adcc742386cd714489d24d948db2a2683cd82d9f361c323"
+    "view-reading.css": "ad9447f6ef8224aa1e3bc99039a627cfca10f541c8e95ca512a3745c4ffb030c"
   }
 }
